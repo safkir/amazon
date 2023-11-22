@@ -1,0 +1,6 @@
+aws lambda add-permission \
+--function-name myfunctionlambda \
+--statement-id my-scheduled-event \
+--action 'lambda:InvokeFunction' \
+--principal events.amazonaws.com \
+--source-arn arn:aws:events:us-east-1:562156305146:rule/rulee
