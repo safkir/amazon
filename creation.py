@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     # Replace 'EKS' with your desired description prefix
     description_prefix = 'Amazon EKS'
     # Replace 'your-target-group-arn' with the actual ARN of your ALB target group
-    target_group_arn = 'arn:aws:elasticloadbalancing:us-east-1:294290754746:targetgroup/my-target/0fb16260f40c790d'
+    target_group_arn = 'arn:aws:elasticloadbalancing:'
 
     # Create an EC2 client
     ec2_client = boto3.client('ec2', region_name=region)
